@@ -70,3 +70,47 @@ let questions = [
      }
 
     ];
+
+    restartBtn.addEventListener("click", restart);
+        nextBtn.addEventListener("click", next);
+        submitBtn.addEventListener("click", submit);
+
+        function beginQuiz() {
+            currentQuestion = 0;
+        finalScore.innerHTML = questions.length;
+        questionSection.innerHTML = questions[currentQuestion].question;
+        trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
+        trueBtn.onclick = () => {
+            if(questions[currentQuestion.answers[0].answer]) {
+                if(score < 6) {
+                    score++;
+                }
+            }
+
+            userScore.innerHTML = score;
+            if(currentQuestion < 5) {
+                next();
+            }
+        }
+
+        falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
+        falseBtn.onclick = () => {
+            if(questions[currentQuestion].answers[1].answer) {
+                if(score < 6) {
+                    score++;
+                }
+            }
+            userScore.innerHTML = score;
+            if(currentQuestion < 5) {
+                next();
+            }
+        }
+
+
+
+    }
+
+
+    beginQuiz();
+
+    
