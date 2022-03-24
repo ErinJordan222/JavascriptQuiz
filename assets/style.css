@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: rgb(2, 19, 252);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%
+}
+
+.header div {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.container {
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(129, 179, 255);
+    height: 20vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+.content {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.controls {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.timer-display {
+    position: absolute;
+    border: 1px solid;
+}
+
+
+.score {
+    font-size: 80%;
+    font-weight: bold;
+}
+
+#user-score {
+    color: white;
+}
+
+#final-score {
+    color: white;
+}
+
+.btn {
+    font-size: 60%;
+    font-weight: bold;
+    background:rgb(186, 198, 252);
+    border-radius: 4px;
+    padding: 10px;
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
